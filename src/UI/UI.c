@@ -139,6 +139,7 @@ int draw_field(bool field[50][50], int ctr) {
 		printf("%c", 205);
 	}
 	printf("%c", 188);
+	printf("Current epoch: %d",ctr);
 	return 0;
 }
 int button_is_not_pressed(){
