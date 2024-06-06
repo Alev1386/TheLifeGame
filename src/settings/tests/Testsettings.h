@@ -1,4 +1,4 @@
 #ifndef SAVE_HT
 #define SAVE_HT
-int TestSettings();
+int TestSettings()
 #endif

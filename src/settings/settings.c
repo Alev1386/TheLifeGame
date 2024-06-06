@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "settings.h"
-int save_settings(const char *filename, int mas[MATRIX2_SIZE]) {
+int save_settings(const char *filename, int mas[MATRIX2_SIZE]){
     FILE *file = fopen(filename, "w");
     if (!file) {
         printf("Ошибка открытия файла: %s\n", filename);
