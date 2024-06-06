@@ -1,5 +1,7 @@
 #ifndef SETTINGS_H
-#define SETTINGS_H
-int load_settings(const char *filename, int set[3]);
-int save_settings(const char *filename, int set[3]);
+#define SETTINGS_H 
+#define MATRIX2_SIZE 3
+#include <stdbool.h>
+int load_settings(const char *filename, int mas[MATRIX2_SIZE]);
+int save_settings(const char *filename, int mas[MATRIX2_SIZE]);
 #endif

@@ -158,9 +158,15 @@ void SetPosition(int x, int Y)
 }
 
 char* get_file_name() {
-	char name[20];
-	system("CLS");
-	printf("Enter the name of a file: \n");
-	scanf("%20s", &name);
-	return name;
+    char* str = (char*)malloc(100 * sizeof(char));
+    
+    if (str == NULL) {
+        printf("Flag -1\n");
+        exit(1);
+    }
+    
+    printf("Enter string: ");
+    scanf("%99s", str);
+    
+    return str;
 }
